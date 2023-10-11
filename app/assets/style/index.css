@@ -51,10 +51,14 @@ header > .interface
     gap: 10px;
 }
 
-.logo > a
+.logo > a 
 {
-    font-size: 3rem;
-    animation: colorize 5s alternate infinite ease-in-out ;
+    background-image: url('../img/UNIGAME-LOGO.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
 }
 
 .word {
