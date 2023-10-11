@@ -79,7 +79,7 @@ header > .interface {
 
 header .contato > a {
   padding: 10px 25px;
-  background-color: #00ff08;
+  background-color: #00a9cb;
   border-radius: 30px;
   color: rgb(0, 0, 0);
   display: block;
@@ -156,7 +156,7 @@ main {
   font-size: 2rem;
 }
 .titulo > h2 > span {
-  color: #00ff08;
+  color: #00a9cb;
 }
 
 .info-item {
@@ -255,7 +255,7 @@ main {
 }
 .links-modal > a,
 .links-modal-inscricao > a {
-  background-color: #00ff08;
+  background-color: #00a9cb;
   color: #000;
   padding: 1rem 2rem;
   border-radius: 30px;
@@ -266,12 +266,12 @@ main {
 
 .links-modal > a:hover,
 .links-modal-inscricao > a:hover {
-  background-color: #03bb03;
+  background-color: #0681b3;
 }
 
 /*BTN-REGRAS É O LINK DAS REGULAMENTAÇÕES SÓ QUE DENTRO DO CONTAINER LINKS-MODAL, NOS MODAIS DOS JOGOS*/
 .links-modal .btn-regras {
-  border: 1px solid #151b15;
+  border: 1px solid #00a9cb;
   color: #000;
   padding: 1rem 2rem;
   border-radius: 30px;
@@ -280,7 +280,7 @@ main {
 }
 
 .links-modal .btn-regras:hover {
-  background-color: #00ff08;
+  background-color: #00a9cb;
 }
 /*BTN-REGRAS-INSCRICAO É O LINK DAS REGULAMENTAÇÕES SÓ QUE DENTRO DO CONTAINER REGRAS-CONTAINER, NO MODAL DO LINK DE INSCREVA-SE*/
 .regras-container {
@@ -288,7 +288,7 @@ main {
   justify-content: center;
 }
 .btn-regras-inscricao {
-  border: 1px solid #00ff08;
+  border: 1px solid #00a9cb;
   color: #000;
   padding: 1rem 2rem;
   border-radius: 30px;
@@ -297,7 +297,12 @@ main {
   margin-top: 20px;
 }
 .btn-regras-inscricao:hover {
-  background-color: #00ff08;
+  background-color: #00a9cb;
+}
+.btn-regras-inscricao.new-width {
+  max-width: 210px;
+  width: 100%;
+  text-align: center;
 }
 /*BOTÃO DE FECHAR O MODAL*/
 .close {
@@ -310,7 +315,7 @@ main {
 }
 /*CSS PARA MELHORAR O TEXTO DO MODAL DO RETRO*/
 #modal-retro {
-  max-width: 300px;
+  max-width: 400px;
   width: 90%;
 }
 @media (min-width: 460px) {
@@ -401,22 +406,28 @@ main {
 .footer > .interface > .flex {
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #00ff08;
+  border-bottom: 2px solid #00a9cb;
 }
 .icons_contato {
   display: flex;
   gap: 1rem;
 }
 .icon-content {
-  background-color: #00ff08;
-  border-radius: 50%;
+  background-color: #00a9cb;
+  border-radius: 99px;
   padding: 10px;
+  transition: transform 150ms ease-in-out;
 }
-
+.icon-content:hover {
+  transform: scale(1.1);
+}
 .icon-content > a {
   color: black;
+  transition: color 150ms ease-in-out;
 }
-
+.icon-content:hover > a {
+  color: #fff;
+}
 .footer > .interface > .email {
   margin-top: 10px;
   display: flex;
