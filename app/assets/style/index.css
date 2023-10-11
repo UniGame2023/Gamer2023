@@ -30,10 +30,6 @@ body
 
 /* Cabeçalho */
 
-header
-{
-    padding: 20px;
-}
 
 header > .interface
 {
@@ -51,14 +47,17 @@ header > .interface
     gap: 10px;
 }
 
-.logo > a 
+.logo > a
 {
-    background-image: url('../img/UNIGAME-LOGO.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.logo > a > img
+{
+    width: 100%;
+    object-fit: cover;
 }
 
 .word {
