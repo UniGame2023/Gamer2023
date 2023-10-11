@@ -311,6 +311,11 @@ main {
   width: 20px;
   height: 20px;
 }
+/*CSS PARA MELHORAR O TEXTO DO MODAL DO RETRO*/
+#modal-retro {
+  max-width: 300px;
+  width: 90%;
+}
 @media (min-width: 460px) {
   .links-modal {
     flex-direction: row-reverse;

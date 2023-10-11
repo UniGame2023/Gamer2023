@@ -1,7 +1,7 @@
 const modalInscricao = document.getElementById("modal-inscricao");
 const btnInscricao = document.getElementById("btn-inscricao");
 const closeInscrição = document.getElementById("close-inscricao");
-//TESTANDO MODAL
+
 //Modal cs2
 const cs2 = document.getElementById("modal-cs2");
 const btnCs2 = document.getElementById("cs2");
