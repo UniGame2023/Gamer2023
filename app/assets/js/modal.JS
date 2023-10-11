@@ -32,7 +32,7 @@ const naruto = document.getElementById("modal-naruto");
 const btnNaruto = document.getElementById("NARUTO");
 const closeNaruto = document.getElementById("close-naruto");
 
-//MODAL DO BOTÃO INSCREVA-SE
+//MODA DO BOTÃO INSCREVA-SE
 btnInscricao.addEventListener("click", () => {
   modalInscricao.showModal();
 });
