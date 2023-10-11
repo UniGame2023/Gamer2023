@@ -9,13 +9,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&display=swap" rel="stylesheet">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="app/assets/style/index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <title>UniGamer - 2023</title>
     </head>
     
     <body>
-            <header>
+            <header class="hdr">
                 <div class="interface">
                     <div class="logo">
                         <a href="index.html">
@@ -23,10 +25,37 @@
                         </a>
                     </div>
     
-                    <div id="btn-inscricao" class="contato">
-                        <a href="#">Inscreva-se</a>
+                    <div class="contato rmv_btn" id="btn-inscricao">
+                        <a class="rem_btn" data-bs-toggle="modal" data-bs-target="#ins" href="#">Inscreva-se gratuitamente!</a>
                     </div>
                     
+                    <!-- Modal -->
+                    <div class="modal fade" id="ins" tabindex="-1" role="dialog" aria-labelledby="insLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                            <div class="modal-content">
+                                <!-- Cabeçalho do modal -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="InscricaoLabel">Faça sua inscrição no UniGame: </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <!-- Corpo do modal -->
+                                <div class="modal-body text-center " >
+                                    <div style="margin-bottom: 10px;">
+                                        <button type="button" class="btn btn-primary rounded-pill" style="color: white; background-color: #00ff08; border: none;">
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXB7wtu1mooOlepRWLSolt2yH0SLn0hWDr2_edZ3xESCbVww/viewform" target="_blank" style="color: black; text-decoration: none;">Categoria individual</a>
+                                        </button>
+                                    </div>
+                    
+                                    <div>
+                                        <button type="button" class="btn btn-primary rounded-pill" style="color: white; background-color: #00ff08; border: none;">
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6C7i2BEKU6o5oM1bS62pki9AwGnm3VfY6Ss5dEAX4LGi3gg/viewform" target="_blank" style="color: black; text-decoration: none;">Categoria em equipe</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
     
             <main>
@@ -41,9 +70,40 @@
                                     Dia 19 de outubro o UniFacema sediará o UniGame, uma competição de jogos que reunirá os melhores jogadores da região. O evento contará com torneios de jogos eletrônicos, como Counter-Strike 2, Mortal Kombat 11, Valorant, entre outros. (Evento totalmente gratuito)
                                 </p>
                             </div>
-                            
-                            <div class="canva-conteiner">
-                               <canvas></canvas>
+    
+                            <div class"content-gif">
+                               <img class="gif" src="./app/assets/img/animado.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contato-text-top">
+                        <a class="btn_text-top" data-bs-toggle="modal" data-bs-target="#inscricao2" href="#">Inscreva-se aqui</a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="inscricao2" tabindex="-1" role="dialog" aria-labelledby="inscricao2Label" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                            <div class="modal-content">
+                                <!-- Cabeçalho do modal -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="inscricao2Label">Faça sua inscrição no UniGame: </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <!-- Corpo do modal -->
+                                <div class="modal-body text-center " >
+                                    <div style="margin-bottom: 10px;">
+                                        <button type="button" class="btn btn-primary rounded-pill" style="color: white; background-color: #00ff08; border: none;">
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXB7wtu1mooOlepRWLSolt2yH0SLn0hWDr2_edZ3xESCbVww/viewform" target="_blank" style="color: black; text-decoration: none;">Categoria individual</a>
+                                        </button>
+                                    </div>
+                    
+                                    <div>
+                                        <button type="button" class="btn btn-primary rounded-pill" style="color: white; background-color: #00ff08; border: none;">
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6C7i2BEKU6o5oM1bS62pki9AwGnm3VfY6Ss5dEAX4LGi3gg/viewform" target="_blank" style="color: black; text-decoration: none;">Categoria em equipe</a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -54,41 +114,163 @@
                        
                            <div class="titulo">
                                 <h2><span>Modalidades</span></h2>
+                                <p>Clique no card para acessar as regras</p>
                            </div>
-    
+                           
                            <div class="flex">
-                                <div id="cs2" class="info-item">
-                                    
-                                    
-                                    
+                                <div class="info-item " type="button" data-bs-toggle="modal" data-bs-target="#cs" id="cs2" class="info-item">
+                                </div>
+                    
+                                <!-- Modal -->
+                                <div class="modal fade" id="cs" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="csLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="csLabel">Regras: </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul class="regras">
+                                                    <li>O torneio será dividido em chaves, com quartas de final, semifinais e final.</li>
+                                                    <li>As equipes avançarão nas chaves com base em seu desempenho.</li>
+                                                    <li>As partidas serão jogadas em formato 1v1.</li>
+                                                    <li>O mapa será selecionado aleatoriamente de um pool pré-determinado.</li>
+                                                    <li>As partidas serão disputadas em rodadas, com cada jogador alternando lados (terrorista e contra-terrorista)</li>
+                                                    <li>O jogador que atingir 16 rounds ganhos primeiro será declarado vencedor da partida.</li>
+                                                    <li> A partida esta limitada a 16 mil  no inicio de cada partida</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+    
+                                <div id="FIFA" type="button" data-bs-toggle="modal" data-bs-target="#fifa" class="info-item">
+                                </div>
+
+                                <div class="modal fade" id="fifa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fifaLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="fifaLabel">Regras: </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="regras">
+                                                <li>O torneio será dividido em chaves, com quartas de final, semifinais e final.</li>
+                                                <li>As equipes avançarão nas chaves com base em seu desempenho.</li>
+                                                <li>As equipes devem ser escolhidas de acordo com as regras do jogo FIFA 22. <b>Não é permitido o uso de equipes personalizadas.</b></li>
+                                                <li>A competição será disputada no formato de partidas individuais.</li>
+                                                <li>Cada partida terá duração de 10 minutos, incluindo o tempo regulamentar, sem prorrogação. Em caso de <b>empate</b>, os jogadores devem jogar novamente para determinar o vencedor.</li>
+                                                <li>Os jogadores devem respeitar as regras de fair play e manter um comportamento esportivo durante toda a competição.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
     
-                                <div id="FIFA" class="info-item">
-                                    
-                                    
-                                    
+
+                                <div id="Valorant" class="info-item" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valorant">
                                 </div>
+
+                                <div class="modal fade" id="valorant" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="valorantLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="valorantLabel">Regras: </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="regras">
+                                                <li>O torneio será dividido em chaves, com quartas de final, semifinais e final.</li>
+                                                <li>As equipes avançarão nas chaves com base em seu desempenho.</li>
+                                                <li>Participarão 8 equipes, cada uma composta por 5 jogadores.</li>
+                                                <li>Os mapas serão escolhidos aleatoriamente.</li>
+                                                <li>Não haverá veto de mapas</li>
+                                                <li>É estritamente <b>proibido</b> o uso de trapaças ou programas ilegais.</li>
+                                                <li>Comportamento tóxico ou antidesportivo não será tolerado.</li>
+                                                <li>As equipes devem estar presentes na hora marcada para as partidas.</li>
+                                                <li>Cada partida será uma melhor de 3 mapas</li>
+                                                <li>As equipes não trocarão de lado durante os mapas.</li>
+                                                <li>A primeira equipe a vencer 2 mapas vencerá a partida.</li>
+                                                <li>Em caso de <b>empate</b> 1-1, o terceiro mapa será jogado como desempate.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
     
-                                <div id="Valorant" class="info-item">
-                                    
-                                    
-                                    
+                                <div id="MK11" class="info-item" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mortalK">
                                 </div>
-    
-                                <div id="MK11" class="info-item">
-                                    
-                                    
-                                    
+
+                                <div class="modal fade" id="mortalK" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mortalKLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="mortalKLabel">Regras: </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="regras">
+                                                <li>O torneio será dividido em chaves, com quartas de final, semifinais e final.</li>
+                                                <li>As equipes avançarão nas chaves com base em seu desempenho.</li>
+                                                <li>Cada confronto consiste em 2 rounds.</li>
+                                                <li>Usar configurações padrão do jogo.</li>
+                                                <li>Todas as partidas com as mesmas configurações.</li>
+                                                <li>Qualquer personagem e variação são permitidos.</li>
+                                                <li>Personagens não podem ser repetidos na mesma partida.</li>
+                                                <li>Se houver <b>empate</b>, um terceiro round é jogado. Personagens diferentes no terceiro round.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
-                                <div id="RETRO" class="info-item">
-                                    
-                                    
-                                    
+
+
+
+                                <div id="RETRO" class="info-item" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#retro">    
                                 </div>
-                                <div id="NARUTO" class="info-item">
-                                    
-                                    
-                                    
+
+                                <div class="modal fade" id="retro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="retroLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="retroLabel">Regras: </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                         <p>Jogo Livre.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div id="NARUTO" class="info-item" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#naruto">
+                                </div>
+
+                                <div class="modal fade" id="naruto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="narutoLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="narutoLabel">Regras: </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="regras">
+                                                <li>O torneio será dividido em chaves, com quartas de final, semifinais e final.</li>
+                                                <li>As equipes avançarão nas chaves com base em seu desempenho.</li>
+                                                <li>Cada confronto consiste em 2 rounds.</li>
+                                                <li>Usar configurações padrão do jogo.</li>
+                                                <li>Todas as partidas com as mesmas configurações.</li>
+                                                <li>Qualquer personagem e variação são permitidos.</li>
+                                                <li>Personagens não podem ser repetidos na mesma partida.</li>
+                                                <li>Se houver <b>empate</b>, um terceiro round é jogado. Personagens diferentes no terceiro round.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 
                            </div>
@@ -108,98 +290,30 @@
 
                         <div class="icons_contato">
                             <div class="icon-content">
-                                <a href="#" target="_blank" title="twitch"><i class="bi bi-twitch"></i></a>
+                                <a href="https://www.twitch.tv/unigaames" target="_blank"><i class="bi bi-twitch"></i></a>
                                 
                             </div>
                             <div class="icon-content">
-                                <a href="https://www.instagram.com/ads.unifacema/" target="_blank" title="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="https://instagram.com/ads.unifacema?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="bi bi-instagram"></i></a>
                             </div>
                         </div>
                     </div>
+                    <div class="colab">
+                        <p>Organização: <a href="https://instagram.com/ads.unifacema?igshid=MzRlODBiNWFlZA==" target="_blank">Curso de Tecnologia em Análise e Desenvolvimento de Sistemas.</a></p>
+                        <p>Patrocinio: <a href="https://www.instagram.com/bitmail_telecom/" target="_blank">BitMail</a></p>
+                    </div>
 
-                    <p>Patrocinio</p>
+                    <div class="portal_uni">
+                        <a href="https://unifacema.edu.br/" target="_blank"><img src="./app/assets/img/BOTAO DA PAGINA DOS CURSOS.png" ></a>
+                    </div>
+
                 </div>
             </footer>
-            <!--MODAL DO BOTÃO DE INSCREVA-SE DO NAV-->
-            <dialog id="modal-inscricao" class="modal">
-                <div class="fechar-modal">
-                    <button id="close-inscricao" class="close" autofocus><i class="bi bi-x-lg"></i></button>
-                </div>
-                <h2>Faça a sua inscrição no UniGame:</h2>
-                <div class="links-modal-inscricao">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXB7wtu1mooOlepRWLSolt2yH0SLn0hWDr2_edZ3xESCbVww/viewform?usp=sf_link" target="_blank">Categoria individual</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6C7i2BEKU6o5oM1bS62pki9AwGnm3VfY6Ss5dEAX4LGi3gg/viewform?usp=sf_link" target="_blank">Categoria em equipe</a>
-                </div>
-                <div class="regras-container">
-                    <a href="app/projects/crud-mvc.html" class="btn-regras-inscricao new-width">Regulamentações</a>
-                </div>
-            </dialog>
 
-            <!-- MODAL DAS MODALIDADES -->
-            <dialog id="modal-cs2" class="modal">
-                <div class="fechar-modal">
-                    <button id="close-cs2" class="close" autofocus><i class="bi bi-x-lg"></i></button>
-                </div>
-                <h2>Counter-Strike 2:</h2>
-                <div class="links-modal">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXB7wtu1mooOlepRWLSolt2yH0SLn0hWDr2_edZ3xESCbVww/viewform?usp=sf_link" target="_blank">ME INSCREVER</a>
-                    <a href="app/projects/crud-mvc.html" class="btn-regras">Regulamentações</a>
-                </div>
-              </dialog>
-              <dialog id="modal-valorant" class="modal">
-                <div class="fechar-modal">
-                    <button id="close-valorant" class="close" autofocus><i class="bi bi-x-lg"></i></button>
-                </div>
-                <h2>Valorant:</h2>
-                <div class="links-modal">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6C7i2BEKU6o5oM1bS62pki9AwGnm3VfY6Ss5dEAX4LGi3gg/viewform?usp=sf_link" target="_blank">ME INSCREVER</a>
-                    <a href="app/projects/crud-mvc.html" class="btn-regras">Regulamentações</a>
-                </div>
-              </dialog>
-              <dialog id="modal-mk11" class="modal">
-                <div class="fechar-modal">
-                    <button id="close-mk" class="close" autofocus><i class="bi bi-x-lg"></i></button>
-                </div>
-                <h2>Mortal Kombat 11:</h2>
-                <div class="links-modal">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXB7wtu1mooOlepRWLSolt2yH0SLn0hWDr2_edZ3xESCbVww/viewform?usp=sf_link" target="_blank">ME INSCREVER</a>
-                    <a href="app/projects/crud-mvc.html" class="btn-regras">Regulamentações</a>
-                </div>
-              </dialog>
-              <dialog id="modal-fifa" class="modal">
-                <div class="fechar-modal">
-                    <button id="close-fifa" class="close" autofocus><i class="bi bi-x-lg"></i></button>
-                </div>
-                <h2>FIFA 22:</h2>
-                <div class="links-modal">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXB7wtu1mooOlepRWLSolt2yH0SLn0hWDr2_edZ3xESCbVww/viewform?usp=sf_link" target="_blank">ME INSCREVER</a>
-                    <a href="app/projects/crud-mvc.html" class="btn-regras">Regulamentações</a>
-                </div>
-              </dialog>
-              <dialog id="modal-naruto" class="modal">
-                <div class="fechar-modal">
-                    <button id="close-naruto" class="close" autofocus><i class="bi bi-x-lg"></i></button>
-                </div>
-                <h2>Naruto Ultimate Ninja Storm 4:</h2>
-                <div class="links-modal">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXB7wtu1mooOlepRWLSolt2yH0SLn0hWDr2_edZ3xESCbVww/viewform?usp=sf_link" target="_blank">ME INSCREVER</a>
-                    <a href="app/projects/crud-mvc.html" class="btn-regras">Regulamentações</a>
-                </div>
-            </dialog>
-            <dialog id="modal-retro" class="modal">
-                    <div class="fechar-modal">
-                        <button id="close-retro" class="close" autofocus><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <h2>Jogos Retrô:</h2>
-                    <p>
-                        Reviva a nostalgia dos jogos retrô na área da vivência! Venha se divertir e mergulhar nas experiências de videogame do passado. Desafie-se em clássicos atemporais e compartilhe risadas e memórias. A diversão retrô está esperando por você na área da vivência - junte-se a nós e viaje no tempo dos jogos!
-                    </p>
-                    <div class="regras-container regras-container-retro">
-                        <a href="app/projects/crud-mvc.html" class="btn-regras-inscricao">Regulamentações</a>
-                    </div>
-              </dialog>
+            
+
         <script src="app/assets/js/orb.js"></script>
         <script src="app/assets/js/menu_moble.js"></script>
-        <script src="app/assets/js/modal.js"></script>
+        <script src="app/assets/js/modal.JS"></script>
     </body>
 </html>
