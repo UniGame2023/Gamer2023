@@ -586,6 +586,7 @@ main
     /*exibindo novamente o botao na sessao1*/
     .contato-text-top{
         margin-bottom: 10px;
+        margin-top: 0;
     }
 }
 
